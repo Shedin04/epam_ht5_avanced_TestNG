@@ -7,8 +7,10 @@ public class Main {
         System.out.println(sides.area() + " | " + sides.perimeter() + " | " + sides.isSquare());
         sides.replaceSides();
         System.out.println("-------------");
-        ArrayRectangles test = new ArrayRectangles(1);
+        ArrayRectangles test = new ArrayRectangles(2);
         test.addRectangle(sides);
+        Rectangle side2 = new Rectangle(3, 6);
+        test.addRectangle(side2);
         System.out.println(test.numberSquares());
     }
 }
